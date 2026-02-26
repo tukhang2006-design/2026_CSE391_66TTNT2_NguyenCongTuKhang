@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+  <link rel="stylesheet" href="Form (Ex4).css">
+</head>
+<body>
+
+<form class="employee-form">
+  <h3>Basic Info</h3>
+
+  <label>Employee ID</label>
+  <input type="text" value="9"><br><br>
+
+  <label>Last Name</label>
+  <input type="text" value="Dodsworth"><br><br>
+
+  <label>First Name</label>
+  <input type="text" value="Anne"><br><br>
+
+  <label>Gender</label>
+  <div class="radio-group">
+    <label><input type="radio" name="gender"> Male</label><br>
+    <label><input type="radio" name="gender"> Female</label><br>
+    <label><input type="radio" name="gender"> XXX</label><br>
+    <label><input type="radio" name="gender" checked> ZZZ</label><br>
+  </div>
+
+  <label>Title</label>
+  <input type="text" value="Sales Representative"><br><br>
+
+  <label>Suffix</label>
+  <input type="text" value="Ms."><br><br>
+
+  <label>BirthDate</label>
+  <input type="datetime-local" value="1969-07-02T00:00"><br><br>
+
+  <label>HireDate</label>
+  <input type="datetime-local" value="1994-11-15T00:00"><br><br>
+
+  <label>Reports To</label>
+  <select>
+    <option>Buchanan</option>
+  </select>
+
+  <h3>Contact Info</h3>
+
+  <label>Email</label>
+  <input type="email" placeholder="name@example.com"><br><br>
+
+  <label>Address</label>
+  <input type="text" value="7 Houndstooth Rd."><br><br>
+
+  <label>City</label>
+  <input type="text" value="London"><br><br>
+
+  <label>Region</label>
+  <input type="text" value="England"><br><br>
+
+  <label>Postal Code</label>
+  <input type="text" value="WG2 7LT"><br><br>
+
+  <label>Country</label>
+  <select>
+    <option>Russian Federation</option>
+  </select><br><br>
+
+  <label>US home phone</label>
+  <input type="tel" value="(234) 234 2345"><br><br>
+
+  <div class="row">
+    <label>Photo</label>
+    <input type="text" value="EmpID9.bmp">
+  </div>
+
+
+  <h3>Optional Info</h3>
+
+  <label>Notes</label>
+  <textarea rows="4">
+Anne has a BA degree in English from St. Lawrence College.
+She is fluent in French and German.ZZZ
+  </textarea><br><br>
+
+  <label>Preferred Shift</label>
+  <label><input type="checkbox"> Regular</label><br>
+  
+  <label>   </label>
+  <label><input type="checkbox" checked> Gravy Yard</label><br>
+
+  <label>Active?</label>
+  <input type="checkbox" checked><br><br>
+  
+  <div class="buttons">
+    <button type="submit">Submit</button>
+    <button type="reset">Cancel</button>
+  </div>
+</form>
+
+</body>
+</html>
