@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đăng ký</title>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+
+<link rel="stylesheet" href="dangKy_caiTien.css">
+<script src="dangKy_caiTien.js"></script>
+
+</head>
+
+<body>
+
+<div id="main">
+
+<form method="get" id="demoForm">
+
+<p>
+<label>Họ và tên</label>
+<input name="fullName" id="fullName" type="text" maxlength="50">
+<span id="charCount">0/50</span>
+</p>
+
+<p>
+<label>Email</label>
+<input name="user" type="text">
+</p>
+
+<p>
+<label>Số điện thoại</label>
+<input name="phone" type="text">
+</p>
+
+<p>
+<label>Mật khẩu</label>
+
+<div class="password-box">
+<input id="password" type="password" name="password">
+<span id="togglePass">👁</span>
+</div>
+
+<div id="strengthBar">
+<div id="strength"></div>
+</div>
+
+<span id="strengthText"></span>
+
+</p>
+
+<p>
+<label>Điền lại mật khẩu</label>
+<input id="re-password" type="password" name="re-password">
+</p>
+
+<p class="gender">
+<span class="field-label">Giới tính</span>
+<span class="field-controls">
+<label><input type="radio" name="gender" value="male"> Nam</label>
+<label><input type="radio" name="gender" value="female"> Nữ</label>
+</span>
+</p>
+
+<p class="terms">
+<span class="field-label">Điều khoản</span>
+<label class="field-controls">
+<input type="checkbox" name="terms"> Tôi đồng ý
+</label>
+</p>
+
+<p>
+<input type="submit" value="Đăng ký">
+</p>
+
+</form>
+
+</div>
+
+</body>
+</html>

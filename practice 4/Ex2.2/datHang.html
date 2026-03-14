@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Đặt hàng</title>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+
+<script src="datHang.js"></script>
+<link rel="stylesheet" href="datHang.css">
+
+<style>
+label.error{color:red;}
+</style>
+
+</head>
+
+<body>
+
+<div id="main">
+
+<form id="orderForm">
+
+<p>
+<label>Tên sản phẩm</label>
+<select name="product" id="product">
+<option value="">-- Chọn sản phẩm --</option>
+<option value="ao">Áo</option>
+<option value="quan">Quần</option>
+<option value="giay">Giày</option>
+</select>
+</p>
+
+<p>
+<label>Số lượng</label>
+<input type="number" name="quantity" id="quantity">
+</p>
+
+<p>
+<label>Ngày giao hàng</label>
+<input type="date" name="date" id="date">
+</p>
+
+<p>
+<label>Địa chỉ giao</label>
+<input type="text" name="address">
+</p>
+
+<p>
+<label>Ghi chú</label>
+<textarea name="note" id="note"></textarea>
+<span id="count">0/200</span>
+</p>
+
+
+<p class="pay">
+<span class="field-label">Phương thức thanh toán</span>
+<span class="field-controls">
+<label><input type="radio" name="pay" value="COD"> COD</label>
+<label><input type="radio" name="pay" value="bank"> Chuyển khoản</label>
+<label><input type="radio" name="pay" value="wallet"> Ví điện tử</label>
+</span>
+</p>
+
+<p>
+<label>Tổng tiền</label>
+<span id="total">0</span> VNĐ
+</p>
+
+<p>
+<input type="submit" value="Đặt hàng">
+</p>
+
+</form>
+
+<div id="confirmBox">
+<h3>Xác nhận đặt hàng</h3>
+<p id="summary"></p>
+
+<button id="confirmBtn">Xác nhận</button>
+<button id="cancelBtn">Hủy</button>
+</div>
+
+</div>
+
+</body>
+</html>

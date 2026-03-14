@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quản lý sinh viên</title>
+<link rel="stylesheet" href="loc_va_timkiem.css">
+</head>
+
+<body>
+
+<h2>Quản lý điểm sinh viên</h2>
+
+<div class="input-area">
+<input type="text" id="name" placeholder="Họ tên">
+<input type="number" id="score" placeholder="Điểm (0-10)">
+<button id="addBtn">Thêm</button>
+</div>
+
+<div class="tools">
+
+<input type="text" id="search" placeholder="Tìm kiếm tên...">
+
+<select id="filterRank">
+<option value="all">Tất cả</option>
+<option value="Giỏi">Giỏi</option>
+<option value="Khá">Khá</option>
+<option value="Trung bình">Trung bình</option>
+<option value="Yếu">Yếu</option>
+</select>
+
+</div>
+
+<table>
+
+<thead>
+<tr>
+<th>STT</th>
+<th>Họ tên</th>
+<th id="sortScore">Điểm</th>
+<th>Xếp loại</th>
+<th>Thao tác</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<div id="noResult"></div>
+
+<div class="stats">
+<span id="total">Tổng SV: 0</span>
+<span id="avg">Điểm TB: 0</span>
+</div>
+
+<script src="loc_va_timkiem.js"></script>
+
+</body>
+</html>

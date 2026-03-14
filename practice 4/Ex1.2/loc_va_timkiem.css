@@ -1,0 +1,41 @@
+body{
+font-family: Arial;
+padding:20px;
+}
+
+input,select,button{
+padding:6px;
+margin:5px;
+}
+
+table{
+border-collapse:collapse;
+width:650px;
+margin-top:10px;
+margin: 0 auto;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+th{
+background:#f0f0f0;
+cursor:pointer;
+}
+
+.weak{
+background:yellow;
+}
+
+#noResult{
+color:red;
+margin-top:10px;
+}
+
+.stats{
+margin-top:10px;
+font-weight:bold;
+}

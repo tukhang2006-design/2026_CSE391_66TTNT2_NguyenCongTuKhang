@@ -1,0 +1,65 @@
+*{
+box-sizing:border-box;
+font-family:Segoe UI,Arial;
+}
+
+body{
+background:#f2f4f8;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+#main{
+width:420px;
+}
+
+form{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+p{
+margin-bottom:14px;
+display:flex;
+flex-direction:column;
+}
+
+input,select,textarea{
+padding:8px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+textarea{
+height:70px;
+}
+
+#count{
+font-size:12px;
+text-align:right;
+}
+
+.pay{
+display:flex;
+flex-direction:column;
+gap: 10px;
+}
+
+.field-controls{
+display:flex;
+gap:10px;
+}
+
+#confirmBox{
+display:none;
+margin-top:20px;
+padding:20px;
+background:white;
+border-radius:8px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
